@@ -1,0 +1,36 @@
+%NAME%
+licenses
+
+%VERSION%
+20140629-2
+
+%DESC%
+The standard licenses distribution package
+
+%URL%
+https://www.archlinux.org/
+
+%ARCH%
+any
+
+%BUILDDATE%
+1490494708
+
+%INSTALLDATE%
+1498389089
+
+%PACKAGER%
+Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
+
+%SIZE%
+409600
+
+%GROUPS%
+base
+
+%LICENSE%
+custom:none
+
+%VALIDATION%
+pgp
+

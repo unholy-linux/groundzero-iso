@@ -1,0 +1,36 @@
+%NAME%
+intel-ucode
+
+%VERSION%
+20170511-1
+
+%DESC%
+Microcode update files for Intel CPUs
+
+%URL%
+https://downloadcenter.intel.com/SearchResult.aspx?lang=eng&keyword=%22microcode%22
+
+%ARCH%
+any
+
+%BUILDDATE%
+1494668315
+
+%INSTALLDATE%
+1498389141
+
+%PACKAGER%
+Christian Hesse <arch@eworm.de>
+
+%SIZE%
+995328
+
+%LICENSE%
+custom
+
+%VALIDATION%
+pgp
+
+%REPLACES%
+microcode_ctl
+

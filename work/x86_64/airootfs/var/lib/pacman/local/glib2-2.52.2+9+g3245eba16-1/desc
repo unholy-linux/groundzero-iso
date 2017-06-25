@@ -1,0 +1,48 @@
+%NAME%
+glib2
+
+%VERSION%
+2.52.2+9+g3245eba16-1
+
+%BASE%
+glib2
+
+%DESC%
+Low level core library
+
+%URL%
+http://www.gtk.org/
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1496487287
+
+%INSTALLDATE%
+1498389089
+
+%PACKAGER%
+Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
+
+%SIZE%
+14111744
+
+%REASON%
+1
+
+%LICENSE%
+LGPL
+
+%VALIDATION%
+pgp
+
+%DEPENDS%
+pcre
+libffi
+libutil-linux
+
+%OPTDEPENDS%
+python: for gdbus-codegen and gtester-report
+libelf: gresource inspection tool
+

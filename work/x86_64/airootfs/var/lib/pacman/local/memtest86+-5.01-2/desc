@@ -1,0 +1,33 @@
+%NAME%
+memtest86+
+
+%VERSION%
+5.01-2
+
+%DESC%
+An advanced memory diagnostic tool
+
+%URL%
+http://www.memtest.org
+
+%ARCH%
+any
+
+%BUILDDATE%
+1470203213
+
+%INSTALLDATE%
+1498389141
+
+%PACKAGER%
+Christian Hesse <arch@eworm.de>
+
+%SIZE%
+151552
+
+%LICENSE%
+GPL2
+
+%VALIDATION%
+pgp
+
