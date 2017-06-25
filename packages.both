@@ -3,6 +3,8 @@
 #######################
 
 # Android
+android-tools 
+android-udev
 ccache
 git
 gnupg 
@@ -31,7 +33,7 @@ lib32-ncurses5-compat-libs
 lib32-readline
 pngquant
 pngcrush
-make-3.81
+#make-3.81
 jdk8-openjdk
 
 ##xorg packages
@@ -76,11 +78,13 @@ xf86-input-synaptics
 xf86-input-vmmouse
 xf86-input-mouse
 laptop-detect
+mlocate
+reflector
+
+##lightdm
 lightdm
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
-mlocate
-reflector
 
 #bluetooth
 blueberry
@@ -101,6 +105,7 @@ gnome-icon-theme
 #numix-themes
 
 ##fonts
+font-manager-git
 adobe-source-sans-pro-fonts
 cantarell-fonts
 noto-fonts
@@ -113,6 +118,7 @@ ttf-monaco
 ttf-roboto
 
 ##environment
+compton
 bash-completion
 ncdu
 speedtest-cli
@@ -122,7 +128,6 @@ pavucontrol
 volumeicon
 
 #AUR
-xfce4-dockbarx-plugin-git
 dockbarx-shinybar-theme
 engrampa-thunar
 gtk-theme-config
@@ -138,10 +143,18 @@ gedit2
 
 ## GUI configuration
 xfce4
+xfce4-appfinder
 xfce4-notifyd
+xfce4-power-manager
 xfce4-terminal
+xfce4-screenshooter
+xfce4-whiskermenu-plugin
+xfce4-dockbarx-plugin-git
+xfce4-settings
+xfce4-taskmanager
 
 ##File Management
+gnome-disk-utility
 xdg-user-dirs
 gvfs
 gamin
@@ -150,18 +163,39 @@ tumbler
 file-roller
 
 ##applications
+clipit-gtk3
 gparted
 leafpad
 ristretto
 youtube-dl
 p7zip
-xfce4-screenshooter
-xfce4-whiskermenu-plugin
 parcellite
 mate-system-monitor
 tracker
 dosfstools
 ntfs-3g
+transmission-gtk
+sublime-text-dev
+simplescreenrecorder
+imagemagick
+
+#utilities 
+mousepad
+screenfetch
+calamares
+cower
+gksu
+mintstick-git
+pamac-aur
+playerctl
+polkit
+polkit-gnome
+python2-dbus
+python2-xdg
+qt5ct
+qt5-styleplugins
+qt5-tools
+qt5-webkit
 
 ##vbox
 virtualbox-guest-modules-arch
@@ -179,6 +213,16 @@ wipe
 ## Graphics
 inkscape
 gimp
+
+#printers
+cups
+cups-pdf 
+ghostscript 
+gsfonts
+gutenprint
+libcups 
+hplip
+system-config-printer
 
 #######################
 ##   General Pkgs    ##

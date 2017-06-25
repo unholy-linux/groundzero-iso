@@ -1,4 +1,0 @@
-#!/bin/bash
-sudo fc-cache -vf
-sudo pacman -Scc
-sudo pacman -Sc && sudo pacman-optimize

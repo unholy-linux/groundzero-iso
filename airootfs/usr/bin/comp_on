@@ -1,4 +1,0 @@
-#!/bin/bash
-xfwm4 --compositor=off --replace &
-notify-send -t 800 'Compton Enabled' --icon=video-display
-compton -b &
