@@ -9,7 +9,9 @@ ln -sf /usr/share/zoneinfo/UTC /etc/localtime
 
 usermod -s /usr/bin/zsh root
 cp -aT /etc/skel/ /root/
-chmod 700 /root
+useradd -m -p "" -g users -G "adm,audio,floppy,log,network,rfkill,scanner,storage,optical,power,wheel" -s /bin/zsh liveuser
+#chmod 700 /root
+chown -R liveuser:users /home/liveuser
 
 sed -i 's/#\(PermitRootLogin \).\+/\1yes/' /etc/ssh/sshd_config
 sed -i "s/#Server/Server/g" /etc/pacman.d/mirrorlist
@@ -19,24 +21,12 @@ sed -i 's/#\(HandleSuspendKey=\)suspend/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleHibernateKey=\)hibernate/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 
-useradd -m -p "gzr" -u 500 -g users -G "adm,audio,floppy,log,network,rfkill,scanner,storage,optical,power,wheel" -s /bin/zsh liveuser
-chown -R liveuser:users /home/liveuser
-
-#Enable Calamares Autostart
-# desktop file in config/autostart
-#ln -fs /usr/share/applications/calamares.desktop /home/liveuser/.config/autostart/calamares.desktop
-
-#enable autologin
-groupadd -r autologin
-gpasswd -a liveuser autologin
-#enabling interactive passwordless login
-groupadd -r nopasswdlogin
-gpasswd -a liveuser nopasswdlogin
-
-systemctl enable lightdm.service
-systemctl set-default graphical.target
-systemctl enable pacman-init.service choose-mirror.service NetworkManager.service org.cups.cupsd.service bluetooth.service
+systemctl enable pacman-init.service choose-mirror.service NetworkManager.service bluetooth.service
+systemctl set-default multi-user.target
+pacman -Syy
+systemctl enable org.cups.cupsd.service
 systemctl enable ntpd.service
+rm /etc/udev/rules.d/81-dhcpcd.rules
 
 export _EDITOR=nano
 echo "EDITOR=${_EDITOR}" >> /etc/environment

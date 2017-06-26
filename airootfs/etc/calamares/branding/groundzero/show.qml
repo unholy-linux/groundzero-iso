@@ -42,9 +42,9 @@ Presentation
         Text {
             anchors.horizontalCenter: background1.horizontalCenter
             anchors.top: background1.bottom
-            text: "Welcome to GZ Linux <br/>"+
-                  "GroundZero is based on Arch Linux, with an easy installation.<br/>"+
-                  "GroundZero is our vision for bringing the cinnamon experience to Arch."
+            text: "Welcome to Ground Zero Linux <br/>"+
+                  "GroundZero is based on Arch Linux with an easy installation.<br/>"+
+                  "GroundZero was designed by android devs for the ease of android compilation."
             wrapMode: Text.WordWrap
             width: 600
             horizontalAlignment: Text.Center
@@ -63,8 +63,8 @@ Presentation
         Text {
             anchors.horizontalCenter: background2.horizontalCenter
             anchors.top: background2.bottom
-            text: "GroundZero features the smooth cinnamon desktop,<br/>"+
-                  "customized to provide amazing functionality."
+            text: "GroundZero features the xfce desktop,<br/>"+
+                  "customized to provide amazing speed, smoothness and functionality."
             wrapMode: Text.WordWrap
             width: 600
             horizontalAlignment: Text.Center
@@ -83,9 +83,9 @@ Presentation
         Text {
             anchors.horizontalCenter: background3.horizontalCenter
             anchors.top: background3.bottom
-            text: "With incredible theming, and the power of Arch Linux,<br/>"+
-                  "GroundZero provides a lightning fast, extremely powerful,<br/>"+
-									"and stunning desktop experience."
+            text: "Dark theming makes it easy on the eyes<br/>"+
+                  "Made by the devs for the devs,<br/>"+
+									"Enjoy your experience."
             wrapMode: Text.WordWrap
             width: 600
             horizontalAlignment: Text.Center

@@ -53,3 +53,5 @@ alias q='exit'
 alias md='sudo updatedb'
 alias fig='sudo leafpad /etc/pacman.conf'
 alias yrt='yaourt -S'
+
+neofetch

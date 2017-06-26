@@ -3,8 +3,8 @@
 set -e -u
 
 iso_name=groundzero
-iso_label="groundzero-v1.0-$(date +%Y%m)-x86_64"
-iso_version="v1.0-$(date +%Y.%m.%d)"
+iso_label="GroundZero-v1.1-$(date +%Y%m)-x86_64"
+iso_version="v1.1-$(date +%Y.%m.%d)"
 install_dir=arch
 work_dir=work
 out_dir=out

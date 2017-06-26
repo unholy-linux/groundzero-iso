@@ -1,5 +1,6 @@
 NAME="GroundZero"
 ID=arch
+PRETTY_NAME="BrokenArrow"
 PRETTY_NAME="GroundZero"
-ANSI_COLOR="0;32"
+ANSI_COLOR="0;36"
 HOME_URL="https://github.com/GroundZeroLinux"

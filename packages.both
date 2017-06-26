@@ -3,6 +3,8 @@
 #######################
 
 # Android
+android-sdk
+android-sdk-platform-tools
 android-tools 
 android-udev
 ccache
@@ -153,6 +155,7 @@ xfce4-whiskermenu-plugin
 xfce4-dockbarx-plugin-git
 xfce4-settings
 xfce4-taskmanager
+xfce-slimlock
 
 ##File Management
 gnome-disk-utility
@@ -181,6 +184,8 @@ simplescreenrecorder
 imagemagick
 
 #utilities 
+neofetch
+w3m
 tmux
 mousepad
 screenfetch
