@@ -7,13 +7,9 @@ locale-gen
 
 ln -sf /usr/share/zoneinfo/UTC /etc/localtime
 
-# root and live user
-usermod -s /bin/bash root
+usermod -s /usr/bin/zsh root
 cp -aT /etc/skel/ /root/
-useradd -m -p "" -g users -G "adm,audio,floppy,log,network,rfkill,scanner,storage,optical,power,wheel" -s /bin/bash liveuser
-#chmod 750 /etc/sudoers.d
-chmod 440 /etc/sudoers.d/g_wheel
-chown -R liveuser:users /home/liveuser
+chmod 700 /root
 
 sed -i 's/#\(PermitRootLogin \).\+/\1yes/' /etc/ssh/sshd_config
 sed -i "s/#Server/Server/g" /etc/pacman.d/mirrorlist
@@ -23,19 +19,19 @@ sed -i 's/#\(HandleSuspendKey=\)suspend/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleHibernateKey=\)hibernate/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 
-#useradd -m -p "groundzero" -g users -u 1100 -G "adm,audio,floppy,log,network,rfkill,scanner,storage,optical,power,wheel" -s /bin/bash liveuser
-#chown -R liveuser:users /home/liveuser
+useradd -m -p "gzr" -u 500 -g users -G "adm,audio,floppy,log,network,rfkill,scanner,storage,optical,power,wheel" -s /bin/zsh liveuser
+chown -R liveuser:users /home/liveuser
 
 #Enable Calamares Autostart
 # desktop file in config/autostart
-ln -fs /usr/share/applications/calamares.desktop /home/liveuser/.config/autostart/calamares.desktop
+#ln -fs /usr/share/applications/calamares.desktop /home/liveuser/.config/autostart/calamares.desktop
 
 #enable autologin
-#groupadd -r autologin
-#gpasswd -a liveuser autologin
+groupadd -r autologin
+gpasswd -a liveuser autologin
 #enabling interactive passwordless login
-#groupadd -r nopasswdlogin
-#gpasswd -a liveuser nopasswdlogin
+groupadd -r nopasswdlogin
+gpasswd -a liveuser nopasswdlogin
 
 systemctl enable lightdm.service
 systemctl set-default graphical.target

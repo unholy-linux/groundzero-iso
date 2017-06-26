@@ -144,6 +144,7 @@ gedit2
 ## GUI configuration
 xfce4
 xfce4-appfinder
+xfce4-clipman-plugin
 xfce4-notifyd
 xfce4-power-manager
 xfce4-terminal
@@ -180,6 +181,7 @@ simplescreenrecorder
 imagemagick
 
 #utilities 
+tmux
 mousepad
 screenfetch
 calamares
