@@ -1,0 +1,10 @@
+[X-GNOME-Metatheme]
+Name=Plasma Fire
+Type=X-GNOME-Metatheme
+Comment=Dark theme (Orange variant)
+Encoding=UTF-8
+GtkTheme=Plasma Fire
+MetacityTheme=Adwaita
+IconTheme=Adwaita
+CursorTheme=Adwaita
+CursorSize=24

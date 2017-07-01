@@ -3,8 +3,11 @@
 #
 # Syntax: simple "KEY=VAL" pairs on separate lines
 #
+
+QT_QPA_PLATFORMTHEME=qt5ct
+
 SHELL=/bin/bash
 
-BROWSER=google-chrome
+BROWSER=chromium
 
-EDITOR=leafpad
+EDITOR=gedit

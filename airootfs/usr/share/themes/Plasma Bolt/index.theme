@@ -1,0 +1,10 @@
+[X-GNOME-Metatheme]
+Name=Plasma Bolt
+Type=X-GNOME-Metatheme
+Comment=Dark theme (blue variant)
+Encoding=UTF-8
+GtkTheme=Plasma Bolt
+MetacityTheme=Adwaita
+IconTheme=Adwaita
+CursorTheme=Adwaita
+CursorSize=24

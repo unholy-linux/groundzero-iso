@@ -1,0 +1,10 @@
+[X-GNOME-Metatheme]
+Name=Plasma Shock
+Type=X-GNOME-Metatheme
+Comment=Dark theme (green variant)
+Encoding=UTF-8
+GtkTheme=Plasma Shock
+MetacityTheme=Adwaita
+IconTheme=Adwaita
+CursorTheme=Adwaita
+CursorSize=24

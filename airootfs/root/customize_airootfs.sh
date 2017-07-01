@@ -25,7 +25,8 @@ systemctl enable pacman-init.service choose-mirror.service NetworkManager.servic
 systemctl set-default multi-user.target
 pacman -Syy
 systemctl enable org.cups.cupsd.service
-systemctl enable ntpd.service
+systemctl enable ntpd.service acpid.service
+systemctl enable sshd
 rm /etc/udev/rules.d/81-dhcpcd.rules
 
 export _EDITOR=nano

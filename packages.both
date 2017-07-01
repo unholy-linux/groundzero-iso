@@ -1,6 +1,4 @@
-#######################
-## GroundZero Specific
-#######################
+# GroundZero Packagelists
 
 # Android
 android-sdk
@@ -35,8 +33,9 @@ lib32-ncurses5-compat-libs
 lib32-readline
 pngquant
 pngcrush
-#make-3.81
 jdk8-openjdk
+gvfs
+gvfs-mtp
 
 ##xorg packages
 xorg-server
@@ -65,8 +64,12 @@ mesa
 xorg-drivers
 
 ##networking
+b43-fwcutter
+b43-firmware
+broadcom-wl
 gvfs-smb
-networkmanager 
+networkmanager
+networkmanager-pptp
 network-manager-applet 
 networkmanager-dispatcher-ntpd
 wireless_tools
@@ -87,6 +90,8 @@ reflector
 lightdm
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
+lightdm-webkit2-greeter
+lightdm-webkit2-theme-material2
 
 #bluetooth
 blueberry
@@ -100,11 +105,20 @@ pulseaudio-bluetooth
 accountsservice
 polkit-gnome
 gnome-keyring
-#mate-accountsdialog
 
-##theme
+##theme resources
+gtk-update-icon-cache
 gnome-icon-theme
-#numix-themes
+archlinux-themes-slim
+breeze-icons
+adwaita-icon-theme
+arc-icon-theme
+deepin-icon-theme
+elementary-icon-theme
+oxygen-icons
+mate-icon-theme-faenza
+sardi-icons
+surfn-icons-git
 
 ##fonts
 font-manager-git
@@ -134,13 +148,9 @@ dockbarx-shinybar-theme
 engrampa-thunar
 gtk-theme-config
 chromium
-#ultra-flat-icons
-#localepurge
 mugshot
 profile-cleaner
-#xame
 yaourt
-#package-query-git
 gedit2
 
 ## GUI configuration
@@ -156,6 +166,8 @@ xfce4-dockbarx-plugin-git
 xfce4-settings
 xfce4-taskmanager
 xfce-slimlock
+lightdm-webkit2-theme-material2
+xscreensaver
 
 ##File Management
 gnome-disk-utility
@@ -167,6 +179,9 @@ tumbler
 file-roller
 
 ##applications
+acpid 
+conky
+conky-manager
 clipit-gtk3
 gparted
 leafpad
@@ -182,8 +197,16 @@ transmission-gtk
 sublime-text-dev
 simplescreenrecorder
 imagemagick
+vlc
+vivaldi-snapshot
+vivaldi-snapshot-ffmpeg-codecs
+qt4
+smplayer
+flashplugin
+libreoffice-fresh
+scrot
 
-#utilities 
+#utilities
 neofetch
 w3m
 tmux
@@ -203,16 +226,16 @@ qt5ct
 qt5-styleplugins
 qt5-tools
 qt5-webkit
+webkitgtk
+webkit2gtk
 
 ##vbox
 virtualbox-guest-modules-arch
 virtualbox-guest-utils
 
 ##packages for installer
-#hwinfo
 unzip
 zip
-unzip
 unrar
 geany
 wipe
@@ -235,7 +258,6 @@ system-config-printer
 ##   General Pkgs    ##
 #######################
 arch-install-scripts
-b43-fwcutter
 btrfs-progs
 clonezilla
 crda
@@ -282,6 +304,7 @@ testdisk
 usb_modeswitch
 vpnc
 wget
+wttr
 wireless_tools
 wpa_actiond
 wvdial

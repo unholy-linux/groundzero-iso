@@ -1,0 +1,11 @@
+#XfceNotifyWindow.backdrop {
+  border-style: solid;
+  border-color: @borders_active;
+  border-width: 1px;
+}
+
+#XfceNotifyWindow hover.backdrop {
+ border-style: solid;
+  border-color: @borders_active;
+  border-width: 1px; 
+}
