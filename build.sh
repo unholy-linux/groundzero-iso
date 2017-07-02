@@ -3,8 +3,8 @@
 set -e -u
 
 iso_name=groundzero
-iso_label="GZLx-v1.5-$(date +%Y%m)-x86_64"
-iso_version="v1.5-$(date +%Y.%m.%d)"
+iso_label="GZLx-v1.6-$(date +%Y%m)-x86_64"
+iso_version="v1.6-$(date +%Y.%m.%d)"
 install_dir=arch
 work_dir=work
 out_dir=out

@@ -1,7 +1,7 @@
 NAME="GZLx"
 ID=groundzero
 ID_LIKE="arch"
-VERSION_ID=v1.5
-PRETTY_NAME="BrokenArrow"
+VERSION_ID=v1.6
+PRETTY_NAME="Symmetry"
 ANSI_COLOR="0;36"
 HOME_URL="https://github.com/GroundZeroLinux"
