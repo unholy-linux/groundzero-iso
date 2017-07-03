@@ -5,6 +5,31 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+  test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+fi
+
+# alias grep='grep --color=tty -d skip'
+alias l='ls -Ca'
+alias lr='ls -ltrh'
+alias lra='ls -ltrha'
+alias ls='ls --group-directories-first --color=auto'
+alias ll='ls -alFh --group-directories-first  --color=auto'
+alias la='ls -A --group-directories-first --color=auto -F'
+alias dir='dir --color=auto'
+alias vdir='vdir --color=auto'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+alias cp="cp -i"
+alias rm='rm -i'
+alias np='nano PKGBUILD'
+alias sudoenv='sudo env PATH=$PATH'
+alias xo='xdg-open &>/dev/null'
+alias xsetkeyr='xset r rate 182 42'
+alias tmuxkillall="tmux ls | awk '{print $1}' | sed 's/://g' | xargs -I{} tmux kill-session -t {}"
+
 # environment variables
 export EDITOR="$(if [[ -n $DISPLAY ]]; then echo 'leafpad'; else echo 'nano'; fi)"	# leafpad, nano
 
