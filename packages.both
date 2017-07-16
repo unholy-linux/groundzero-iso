@@ -1,8 +1,6 @@
 # GroundZero Packagelists
 
 # Android
-android-sdk
-android-sdk-platform-tools
 android-tools 
 android-udev
 ccache
@@ -85,13 +83,10 @@ xf86-input-mouse
 laptop-detect
 mlocate
 reflector
+plymouth
 
-##lightdm
-lightdm
-lightdm-gtk-greeter
-lightdm-gtk-greeter-settings
-lightdm-webkit2-greeter
-lightdm-webkit2-theme-material2
+##GDM
+gdm
 
 #bluetooth
 blueberry
@@ -109,7 +104,6 @@ gnome-keyring
 ##theme resources
 gtk-update-icon-cache
 gnome-icon-theme
-archlinux-themes-slim
 breeze-icons
 adwaita-icon-theme
 arc-icon-theme
@@ -119,6 +113,8 @@ oxygen-icons
 mate-icon-theme-faenza
 sardi-icons
 surfn-icons-git
+vivacious-colors-icon-theme
+vivacious-colors-folder-addon
 
 ##fonts
 font-manager-git
@@ -157,6 +153,7 @@ gedit2
 xfce4
 xfce4-appfinder
 xfce4-clipman-plugin
+xfce4-goodies
 xfce4-notifyd
 xfce4-power-manager
 xfce4-terminal
@@ -165,10 +162,9 @@ xfce4-whiskermenu-plugin
 xfce4-dockbarx-plugin-git
 xfce4-settings
 xfce4-taskmanager
-slim
-xfce-slimlock
-lightdm-webkit2-theme-material2
 xscreensaver
+i3lock
+gnome-shell
 
 ##File Management
 gnome-disk-utility

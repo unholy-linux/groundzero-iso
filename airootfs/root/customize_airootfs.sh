@@ -21,6 +21,7 @@ sed -i 's/#\(HandleSuspendKey=\)suspend/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleHibernateKey=\)hibernate/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 
+systemctl enable gdm-plymouth.service
 systemctl enable pacman-init.service choose-mirror.service NetworkManager.service bluetooth.service
 systemctl set-default multi-user.target
 pacman -Syy

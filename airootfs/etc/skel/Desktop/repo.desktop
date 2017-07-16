@@ -1,8 +1,8 @@
 [Desktop Entry]
 Name=ClickandRemove
-Comment=Installs and symlinks repo and python2
+Comment=Installs and symlinks repo and python2 as well as installs sdk
 Exec=/tmp2/repo.sh
 Icon=/tmp2/repo.ico
-Terminal=false
+Terminal=true
 Type=Application
 Name[en_US.utf8]=ClickHereFirst.desktop

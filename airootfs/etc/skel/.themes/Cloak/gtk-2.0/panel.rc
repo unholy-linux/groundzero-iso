@@ -6,28 +6,28 @@ style "theme-panel"
 # Disable (comment out) for normal panel backgrounds or to get a transparancy panel.
 	bg_pixmap[NORMAL] = "/assets/panel-bgx30.png"
 
-  bg[NORMAL]      = @bg_color
-  bg[PRELIGHT]    = @bg_color
+  bg[NORMAL]      = @panel_color
+  bg[PRELIGHT]    = @panel_color
   bg[SELECTED]    = @selected_bg_color
-  bg[INSENSITIVE] = mix (0.6, @bg_color, @base_color)
-  bg[ACTIVE]      = @bg_color
+  bg[INSENSITIVE] = mix (0.6, @panel_color, @base_color)
+  bg[ACTIVE]      = @panel_color
 
   fg[NORMAL]      = @fg_color
   fg[PRELIGHT]    = @fg_color
   fg[SELECTED]    = @selected_fg_color
-  fg[INSENSITIVE] = mix (0.5, @fg_color, @bg_color)
+  fg[INSENSITIVE] = mix (0.5, @fg_color, @panel_color)
   fg[ACTIVE]      = @fg_color
 
   text[NORMAL]      = @text_color
   text[PRELIGHT]    = @text_color
   text[SELECTED]    = @selected_fg_color
-  text[INSENSITIVE] = darker (@bg_color)
+  text[INSENSITIVE] = darker (@panel_color)
   text[ACTIVE]      = @selected_fg_color
 
   base[NORMAL]      = @base_color
-  base[PRELIGHT]    = shade (0.95, @bg_color)
+  base[PRELIGHT]    = shade (0.95, @panel_color)
   base[SELECTED]    = @selected_bg_color
-  base[INSENSITIVE] = mix (0.5, @fg_color, @bg_color)
+  base[INSENSITIVE] = mix (0.5, @fg_color, @panel_color)
   base[ACTIVE]      = @selected_bg_color
  	
 	
@@ -86,13 +86,13 @@ style "theme-panel-buttons"
 
 style "theme-applet"
 {
-  fg[NORMAL] = "#ffffff"
+  fg[NORMAL] = "#000000"
   bg[NORMAL] = @base_color
 }
 
 style "theme-panel-light"
 {
-	xthickness = 1
+	xthickness = 0
 	ythickness = 0
 
 	fg[NORMAL] = @fg_color
