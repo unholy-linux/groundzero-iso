@@ -16,9 +16,9 @@
 ######################################################################
 
 # ISO Specific Variables
-ISO_HOST="groundzero"                           		# ISO Host Name
+ISO_HOST="gzlx"                           		# ISO Host Name
 ISO_USER="liveuser"           						# Live user account
-VERSION="GroundZero Installation Framework 2.2"		# Installer Name / Version
+VERSION="GZLx Installation Framework 2.2"		# Installer Name / Version
 TRANS_SRC="/abif-master"							# Dir where translation files are stored
 
 # Create a temporary file to store menu selections

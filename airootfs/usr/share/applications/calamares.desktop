@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
-Name=Install GroundZero
-Comment=Installer for GroundZero
+Name=Install GZLx
+Comment=Installer for GZLx
 Categories=Utility;
-Exec=env QT_QPA_PLATFORMTHEME=Cloak sudo -E calamares
+Exec=env QT_QPA_PLATFORMTHEME=Vertex-Dark sudo -E calamares
 Icon=gz-calamares

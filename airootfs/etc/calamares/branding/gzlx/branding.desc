@@ -1,14 +1,14 @@
 ---
-componentName:  groundzero
+componentName:  gzlx
 
 strings:
-    productName:         GroundZero
-    shortProductName:    GroundZero
-    version:             1.0
-    shortVersion:        1.0
-    versionedName:       GroundZero
-    shortVersionedName:  GroundZero
-    bootloaderEntryName: GroundZero
+    productName:         GZLx
+    shortProductName:    GZLx
+    version:             1.7
+    shortVersion:        1.7
+    versionedName:       GZLx
+    shortVersionedName:  GZLx
+    bootloaderEntryName: GZLx
 
 images:
     productLogo:         "squid.png"

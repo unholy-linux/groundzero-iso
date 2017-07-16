@@ -3,7 +3,7 @@
 #
 
 #<ip-address>	<hostname.domain.org>	<hostname>
-127.0.0.1 localhost localhost.localdomain localhost4 localhost4.localdomain4 GroundZero
-::1 localhost localhost.localdomain localhost6 localhost6.localdomain6 GroundZero
+127.0.0.1 localhost localhost.localdomain localhost4 localhost4.localdomain4 GZLx
+::1 localhost localhost.localdomain localhost6 localhost6.localdomain6 GZLx
 
 # End of file
