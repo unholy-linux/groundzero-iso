@@ -23,7 +23,6 @@ useradd -m -p "" -g users -G "adm,audio,floppy,log,network,rfkill,scanner,storag
 chown -R liveuser:users /home/liveuser
 
 systemctl enable lightdm.service
-systemctl set-default graphical.target
 systemctl enable pacman-init.service choose-mirror.service NetworkManager.service bluetooth.service
 systemctl enable org.cups.cupsd.service
 systemctl enable ntpd.service acpid.service

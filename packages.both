@@ -152,6 +152,7 @@ gedit2
 
 ## GUI configuration
 xfce4
+xfce4-session
 xfce4-appfinder
 xfce4-clipman-plugin
 xfce4-goodies
@@ -165,7 +166,6 @@ xfce4-settings
 xfce-slimlock
 xfce4-taskmanager
 xscreensaver
-gnome-shell
 
 ##File Management
 gnome-disk-utility
@@ -173,6 +173,8 @@ xdg-user-dirs
 gvfs
 gamin
 thunar-archive-plugin
+thunar-volman
+thunar-media-tags-plugin
 tumbler
 file-roller
 
@@ -181,6 +183,7 @@ acpid
 conky
 conky-manager
 clipit-gtk3
+filezilla
 gparted
 leafpad
 ristretto
@@ -191,6 +194,7 @@ mate-system-monitor
 tracker
 dosfstools
 ntfs-3g
+telegram-desktop-bin
 transmission-gtk
 sublime-text-dev
 simplescreenrecorder
