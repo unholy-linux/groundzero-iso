@@ -126,7 +126,6 @@ ttf-monaco
 ttf-roboto
 
 ##environment
-compton
 bash-completion
 ncdu
 speedtest-cli
