@@ -83,10 +83,6 @@ xf86-input-mouse
 laptop-detect
 mlocate
 reflector
-plymouth
-
-##GDM
-gdm
 
 #bluetooth
 blueberry
@@ -139,6 +135,11 @@ pulseaudio-alsa
 pavucontrol
 volumeicon
 
+#lightdm
+lightdm
+lightdm-gtk-greeter
+lightdm-gtk-greeter-settings
+
 #AUR
 dockbarx-shinybar-theme
 engrampa-thunar
@@ -161,9 +162,9 @@ xfce4-screenshooter
 xfce4-whiskermenu-plugin
 xfce4-dockbarx-plugin-git
 xfce4-settings
+xfce-slimlock
 xfce4-taskmanager
 xscreensaver
-i3lock
 gnome-shell
 
 ##File Management

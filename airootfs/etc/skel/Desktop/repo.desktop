@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=ClickandRemove
-Comment=Installs and symlinks repo and python2 as well as installs sdk
+Name=GZLx-Finalizer
+Comment=Completes remaining steps for the Android Environment
 Exec=/tmp2/repo.sh
-Icon=/tmp2/repo.ico
+Icon=/tmp2/gzlx.png
 Terminal=true
 Type=Application
 Name[en_US.utf8]=ClickHereFirst.desktop

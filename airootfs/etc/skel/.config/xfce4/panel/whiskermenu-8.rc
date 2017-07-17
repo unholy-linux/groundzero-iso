@@ -1,27 +1,26 @@
 button-icon=/usr/share/icons/whiskermenu.svg
+recent=xfce4-terminal.desktop,exo-file-manager.desktop
 button-single-row=false
 show-button-title=true
 button-title=GzLx
 show-button-icon=false
 launcher-show-name=true
 launcher-show-description=true
+launcher-show-tooltip=true
+hover-switch-category=true
+recent-items-max=10
+favorites-in-recent=true
 item-icon-size=2
 favorites=exo-terminal-emulator.desktop,exo-file-manager.desktop,exo-web-browser.desktop,exo-mail-reader.desktop,pamac-manager.desktop
-menu-width=400
-menu-height=500
-menu-opacity=75 
-category-icon-size=1
+menu-width=453
+menu-height=564
 hover-switch-category=true
 favorites-in-recent=true
 load-hierarchy=false
 recent-items-max=10
-display-recent-default=false
-position-search-alternate=true
-position-commands-alternate=true
-position-categories-alternate=true
 command-settings=xfce4-settings-manager
 show-command-settings=true
-command-lockscreen=i3lock -i /usr/share/backgrounds/gz/GzLx.png -n
+command-lockscreen=xflock4 
 show-command-lockscreen=true
 command-switchuser=dm-tool switch-to-greeter
 show-command-switchuser=true
@@ -29,5 +28,28 @@ command-logout=xfce4-session-logout
 show-command-logout=true
 command-menueditor=menulibre
 show-command-menueditor=true
+search-actions=4
 
+[action0]
+name=Man Pages
+pattern=#
+command=exo-open --launch TerminalEmulator man %s
+regex=false
 
+[action1]
+name=Wikipedia
+pattern=!w
+command=exo-open --launch WebBrowser https://en.wikipedia.org/wiki/%u
+regex=false
+
+[action2]
+name=Run in Terminal
+pattern=!
+command=exo-open --launch TerminalEmulator %s
+regex=false
+
+[action3]
+name=Open URI
+pattern=^(file|http|https):\\/\\/(.*)$
+command=exo-open \\0
+regex=true

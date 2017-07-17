@@ -1,0 +1,44 @@
+# ARCHLabs SLiM Theme
+# Erik Dubois
+# erik.dubois@gmail.com
+
+
+# messages (ie: shutdown, session options, etc)
+msg_color               #FFFFFF
+msg_font                SFNS Display Regular:size=10:bold:dpi=96
+msg_x                   50%
+msg_y                   70%
+
+# valid values: stretch, tile
+background_style        stretch
+background_color        #000000
+
+# input box controls
+input_font          	SFNS Display Regular:size=10:bold:dpi=96
+input_color				#98a0a7
+input_fgcolor           #ffffff
+# panel location
+input_panel_x           50%
+input_panel_y           50%
+input_name_x            52
+input_name_y            251
+# force single input box (gdm style)
+input_pass_x            50
+input_pass_y            251
+
+# username / password request (actual text)
+username_font          	SFNS Display Regular:size=13:bold:dpi=96
+username_color        	#ffffff
+username_x              50%
+username_y              78%
+password_x              50%
+password_y              79%
+username_msg            Unlock
+password_msg            
+
+# welcome message
+#welcome_x              	50%
+#welcome_y              	22
+#welcome_font          	SFNS Display Regular:size=10:bold:dpi=96
+#welcome_color          	#ffffff
+
