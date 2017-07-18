@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Vivacious-Dark-Purple
+Comment=The Vivacious GTK Theme.
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Vivacious-Dark-Purple
+MetacityTheme=Vivacious-Dark-Purple
+IconTheme=Vivacious-Colors-Full-Dark
+CursorTheme=DMZ-White
+ButtonLayout=:minimize,maximize,close

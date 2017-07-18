@@ -150,6 +150,7 @@ yaourt
 gedit2
 
 ## GUI configuration
+compton
 xfce4
 xfce4-session
 xfce4-appfinder

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Vivacious-zBlackout-Teal-Pro
+Comment=The Vivacious GTK Theme.
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Vivacious-zBlackout-Teal-Pro
+MetacityTheme=Vivacious-zBlackout-Teal-Pro
+IconTheme=Vivacious-Colors-Full-Dark
+CursorTheme=DMZ-White
+ButtonLayout=:minimize,maximize,close

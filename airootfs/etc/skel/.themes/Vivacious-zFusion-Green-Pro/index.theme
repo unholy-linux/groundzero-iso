@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Vivacious-zFusion-Green-Pro
+Comment=The Vivacious GTK Theme.
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Vivacious-zFusion-Green-Pro
+MetacityTheme=Vivacious-zFusion-Green-Pro
+IconTheme=Vivacious-Colors-Dark
+CursorTheme=DMZ-White
+ButtonLayout=:minimize,maximize,close

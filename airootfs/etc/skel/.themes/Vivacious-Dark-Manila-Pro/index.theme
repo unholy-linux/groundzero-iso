@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Vivacious-Dark-Manila-Pro
+Comment=The Vivacious GTK Theme.
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Vivacious-Dark-Manila-Pro
+MetacityTheme=Vivacious-Dark-Manila-Pro
+IconTheme=Vivacious-Colors-Full-Dark
+CursorTheme=DMZ-White
+ButtonLayout=:minimize,maximize,close

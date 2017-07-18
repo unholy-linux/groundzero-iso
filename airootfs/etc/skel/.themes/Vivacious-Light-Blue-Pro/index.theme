@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Vivacious-Light-Blue-Pro
+Comment=The Vivacious GTK Theme by RAVEfinity.
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Vivacious-Light-Blue-Pro
+MetacityTheme=Vivacious-Light-Blue-Pro
+IconTheme=Vivacious-Colors-Light
+CursorTheme=DMZ-White
+ButtonLayout=:minimize,maximize,close

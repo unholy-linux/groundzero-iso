@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Vivacious-Dark-Yellow
+Comment=The Vivacious GTK Theme.
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Vivacious-Dark-Yellow
+MetacityTheme=Vivacious-Dark-Yellow
+IconTheme=Vivacious-Colors-Full-Dark
+CursorTheme=DMZ-White
+ButtonLayout=:minimize,maximize,close

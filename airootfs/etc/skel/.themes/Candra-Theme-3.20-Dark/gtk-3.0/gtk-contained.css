@@ -60,13 +60,13 @@
 iconview text,
 textview text {
   color: @theme_fg_color;
-  background-color: @theme_base_color; }
+  background-color: @theme_bg_color; }
   .view:backdrop, iconview:backdrop,
   .view text:backdrop,
   iconview text:backdrop,
   textview text:backdrop {
     color: @theme_unfocused_fg_color;
-    background-color: alpha(@theme_base_color,0.65); }
+    background-color: alpha(@theme_bg_color,0.65); }
   .view:selected:focus, iconview:selected:focus, .view:selected, iconview:selected,
   .view text:selected:focus,
   iconview text:selected:focus,
@@ -123,9 +123,9 @@ assistant .sidebar label.highlight {
   background-color: shade(@theme_base_color, 1.3); }
 
 textview {
-  background-color: white; }
+  background-color: shade(@theme_base_color, 1.2); }
   textview:backdrop {
-    background-color: alpha(white,0.65); }
+    background-color: alpha(shade(@theme_base_color, 1.2),0.65); }
 
 popover.background.touch-selection, popover.background.magnifier, .csd popover.background.touch-selection, .csd popover.background.magnifier, popover.background.osd, .csd popover.background.osd, .app-notification,
 .app-notification.frame, .osd .scale-popup, .osd {
@@ -295,7 +295,7 @@ entry {
       -gtk-icon-shadow: 0 1px rgba(0,0,0,0.6); }
     .osd spinbutton:backdrop:not(.vertical), .osd
     entry:backdrop {
-      color: #8d8d8d;
+      color: alpha(@theme_unfocused_fg_color,0.85);
       border-color: alpha(@theme_bg_color, 0.45);
       background-image: linear-gradient(to bottom, alpha(@theme_bg_color,0.55));
       background-clip: padding-box;
@@ -304,7 +304,7 @@ entry {
       -gtk-icon-shadow: none; }
     .osd spinbutton:disabled:not(.vertical), .osd
     entry:disabled {
-      color:#878989;
+      color: alpha(@theme_unfocused_fg_color,0.65);
       border-color: alpha(@theme_bg_color, 0.45);
       background-image: linear-gradient(to bottom, alpha(@theme_bg_color,0.55));
       background-clip: padding-box;
@@ -640,7 +640,7 @@ button.osd {
     box-shadow: none; }
   button.osd:disabled:backdrop,
   button.osd:disabled {
-    color: #878a89;
+    color: @insensitive_fg_color;
     border-color: alpha(@theme_bg_color, 0.0);
     background-color: transparent;
     background-image: linear-gradient(to bottom, rgba(53, 57, 58, 0.0));
@@ -650,7 +650,7 @@ button.osd {
     -gtk-icon-shadow: none;
     border: none; }
   button.osd:backdrop {
-    color: #8d8d8d;
+    color:alpha(@theme_unfocused_fg_color,0.85);
     border-color: rgba(0, 0, 0, 0.0);
     background-color: transparent;
     background-image: linear-gradient(to bottom, rgba(32, 37, 38, 0.0));
@@ -698,7 +698,7 @@ button {
   popover.background.touch-selection button:disabled:backdrop, popover.background.magnifier button:disabled:backdrop, .app-notification button:disabled:backdrop, popover.background.touch-selection button:disabled, popover.background.magnifier button:disabled, .app-notification button:disabled, .osd
   button:disabled:backdrop, .osd
   button:disabled {
-    color: #878a89;
+    color: @insensitive_fg_color;
     border-color: rgba(0, 0, 0, 0.0);
     background-color: transparent;
     background-image: linear-gradient(to bottom, rgba(53, 57, 58, 0.0));
@@ -708,7 +708,7 @@ button {
     -gtk-icon-shadow: none; }
   popover.background.touch-selection button:backdrop, popover.background.magnifier button:backdrop, .app-notification button:backdrop, .osd
   button:backdrop {
-    color: #8d8d8d;
+    color: alpha(@theme_unfocused_fg_color,0.85);
     border-color: rgba(0, 0, 0, 0.0);
     background-color: transparent;
     background-image: linear-gradient(to bottom, rgba(32, 37, 38, 0.0));
@@ -818,7 +818,7 @@ button.suggested-action {
     button.suggested-action:backdrop,
     button.suggested-action.flat:backdrop label,
     button.suggested-action.flat:backdrop {
-      color: alpha(#e2e2e2,0.85); }
+      color: @theme_unfocused_fg_color; }
     .selection-mode button.titlebutton:backdrop:active, .selection-mode button.titlebutton:backdrop:checked,
     button.suggested-action:backdrop:active,
     button.suggested-action:backdrop:checked,
@@ -836,7 +836,7 @@ button.suggested-action {
       button.suggested-action.flat:backdrop:active,
       button.suggested-action.flat:backdrop:checked label,
       button.suggested-action.flat:backdrop:checked {
-        color: alpha(#ededed,0.85); }
+        color: @theme_unfocused_fg_color; }
     .selection-mode button.titlebutton:backdrop:disabled,
     button.suggested-action:backdrop:disabled,
     button.suggested-action.flat:backdrop:disabled {
@@ -1581,7 +1581,7 @@ spinbutton:not(.vertical) {
     box-shadow: inset 0 1px rgba(255, 255, 255, 0);
     text-shadow: none;
     -gtk-icon-shadow: none;
-    color:#8d8d8d;
+    color:alpha(@theme_unfocused_fg_color,0.85);
     border-color: rgba(0, 0, 0, 0.5);
     -gtk-icon-shadow: none;
     box-shadow: none; }
@@ -1592,7 +1592,7 @@ spinbutton:not(.vertical) {
     box-shadow: inset 0 1px rgba(255, 255, 255, 0);
     text-shadow: none;
     -gtk-icon-shadow: none;
-    color: #878989;
+    color: alpha(black,0.5);
     border-color: rgba(0, 0, 0, 0.0);
     -gtk-icon-shadow: none;
     box-shadow: none; }
@@ -1651,7 +1651,7 @@ spinbutton.vertical button.down {
     -gtk-icon-shadow: none;
     outline-color: rgba(238, 238, 236, 0.3); }
   .osd spinbutton.vertical button:first-child:disabled {
-    color: #878989;
+    color: alpha(black,0.5);
     border-color: rgba(0, 0, 0, 0.0);
     background-color: transparent;
     background-image: none;
@@ -1660,7 +1660,7 @@ spinbutton.vertical button.down {
     text-shadow: none;
     -gtk-icon-shadow: none; }
   .osd spinbutton.vertical button:first-child:backdrop {
-    color: #8d8d8d;
+    color: alpha(@theme_unfocused_fg_color,0.85);
     border-color: alpha(@theme_bg_color, 0.35);
     background-image: linear-gradient(to bottom, alpha(@theme_bg_color,0.3));
     background-clip: padding-box;
@@ -1991,7 +1991,7 @@ headerbar {
           .selection-mode.titlebar:not(headerbar) button.suggested-action:backdrop label, .selection-mode.titlebar:not(headerbar) button.suggested-action:backdrop,
           headerbar.selection-mode button.suggested-action:backdrop label,
           headerbar.selection-mode button.suggested-action:backdrop {
-            color: shade(@theme_fg_color, 1.2); }
+            color: shade(@theme_unfocused_fg_color, 0.85); }
         .selection-mode.titlebar:not(headerbar) button.suggested-action:backdrop:disabled,
         headerbar.selection-mode button.suggested-action:backdrop:disabled {
           border-color: transparent;
@@ -2211,7 +2211,7 @@ treeview.view {
       treeview.view:disabled:selected:backdrop {
         color: alpha(@insensitive_fg_color,0.9); }
     treeview.view:disabled:backdrop {
-      color: alpha(@insensitive_fg_color,0.8); }
+      color: alpha(@insensitive_fg_color,0.85); }
   treeview.view.separator {
     min-height: 2px;
     color: #aaaaab; }
@@ -2432,6 +2432,11 @@ menu,
       background-color: transparent;
       border-color: transparent; }
 
+menu > separator,
+.menu > separtor {
+ background-image: none;
+ background-color: shade(#9f9fa1,0.88); }
+
 menuitem accelerator {
   color: alpha(currentColor,0.55); }
 menuitem check,
@@ -2470,7 +2475,9 @@ popover.background {
     margin: 3px; }
   popover.background list separator {
     margin: 0px; }
-
+  popover separator {
+   background-color: alpha(black,0.2); }
+   
 /*************#808080
  * Notebooks *
  *************/
@@ -2649,9 +2656,9 @@ notebook > header {
   notebook > header.bottom tab {
     padding-top: 4px; }
 notebook > stack:not(:only-child) {
-  background-color: #848484; }
+  background-color: @theme_base_color; }
   notebook > stack:not(:only-child):backdrop {
-    background-color: alpha(#868686,0.85); }
+    background-color: alpha(@theme_base_color,0.85); }
 
 /**************
  * Scrollbars *
@@ -2993,7 +3000,7 @@ radio {
     check:disabled label, check:disabled,
     radio:disabled label,
     radio:disabled {
-      color: #8b8e8f; }
+      color: @insensitive_fg_color; }
   check:backdrop,
   radio:backdrop {
     border-color: alpha(@theme_selected_bg_color,0.85);
@@ -3005,7 +3012,7 @@ radio {
     check:backdrop label, check:backdrop,
     radio:backdrop label,
     radio:backdrop {
-      color: #8b8e8f; }
+      color: alpha(shade(@theme_base_color,1.2),0.85); }
     check:backdrop:disabled,
     radio:backdrop:disabled {
       border-color: alpha(#B3B3B3,0.85);
@@ -3016,7 +3023,7 @@ radio {
       check:backdrop:disabled label, check:backdrop:disabled,
       radio:backdrop:disabled label,
       radio:backdrop:disabled {
-        color: alpha(#c3c3c0,0.85); }
+        color: alpha(@insensitive_fg_color,0.85); }
   row:selected check, row:selected
   radio {
     border-color: shade(@theme_selected_bg_color,0.8); }
@@ -4056,7 +4063,7 @@ scrolledwindow junction {
     transition: 200ms ease-out; }
 
 separator {
-  background: #868685;
+  background: shade(@theme_bg_color,0.88);
   min-width: 1px;
   min-height: 1px; }
 
@@ -4065,10 +4072,10 @@ separator {
  *********/
 list {
   color: @theme_fg_color;
-  background-color: @theme_base_color;
+  background-color: @theme_bg_color;
   border-color: rgba(0,0,0,0.41); }
   list:backdrop {
-    background-color: alpha(@theme_base_color,0.8);
+    background-color: alpha(@theme_bg_color,0.8);
     border-color: rgba(0,0,0,0.21); }
   list row {
     padding: 2px; }
@@ -4121,7 +4128,8 @@ row {
     font-weight: bold; }
   .app-notification button.text-button:hover,
   .app-notification button.flat.image-button:hover {
-    background-color: alpha(shade(@theme_bg_color, 0.7),0.9); }
+    background-color: alpha(shade(@theme_bg_color, 0.7),0.9);
+    box-shadow: none; }
 
 /*************
  * Expanders *
@@ -4155,9 +4163,9 @@ calendar {
     calendar.button:hover {
       color: shade(@theme_fg_color, 1.1); }
     calendar.button:backdrop {
-      color: @insensitive_fg_color; }
+      color: alpha(@theme_unfocused_fg_color,0.85); }
     calendar.button:disabled {
-      color: alpha(@theme_unfocused_fg_color,0.65); }
+      color: @insensitive_fg_color; }
   calendar:indeterminate, calendar:indeterminate:backdrop {
     color: alpha(currentColor,0.55); }
   calendar.highlight, calendar.highlight:backdrop {
@@ -4189,7 +4197,6 @@ messagedialog.csd .dialog-action-area button {
   border-right-style: none;
   border-bottom-style: none; }
   messagedialog.csd .dialog-action-area button:first-child {
-    border-left-style: none;
     border-bottom-left-radius: 7px;
     -gtk-outline-bottom-left-radius: 5px; }
   messagedialog.csd .dialog-action-area button:last-child {
@@ -4264,13 +4271,13 @@ placessidebar row {
   placessidebar row:selected {
     color: #ffffff; }
   placessidebar row:disabled {
-    color: alpha(@theme_unfocused_fg_color,0.55); }
+    color: @insensitive_fg_color; }
   placessidebar row:backdrop {
-    color: alpha(@theme_unfocused_fg_color,0.55); }
+    color: alpha(@theme_unfocused_fg_color,0.85); }
     placessidebar row:backdrop:selected {
-      color: alpha(@theme_unfocused_fg_color,0.55); }
+      color: alpha(@theme_unfocused_fg_color,0.65); }
     placessidebar row:backdrop:disabled {
-      color: alpha(@theme_unfocused_fg_color,0.55); }
+      color: alpha(@insensitive_fg_color,0.55); }
   placessidebar row image.sidebar-icon {
     opacity: 0.7; }
     placessidebar row image.sidebar-icon:dir(ltr) {
@@ -4306,6 +4313,10 @@ placessidebar row {
     placessidebar row:drop(active):not(:disabled):selected {
       color: #ffffff;
       background-color: @theme_selected_base_color; }
+  placessidebar row.sidebar-row:hover {
+      background-image: none;
+      background-color: shade(@theme_bg_color,1.06); 
+      color: shade(@theme_fg_color, 1.2); }
 
 placesview .server-list-button > image {
   transition: 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -5099,12 +5110,12 @@ grid.horizontal > stack > box.vertical > box.horizontal > paned.vertical > box.h
 /* *** */
 
 .nemo-window .sidebar .view {
-	background-color: @theme_base_color;
+	background-color: @theme_bg_color;
 	color: @theme_fg_color;
 }
 
 .nemo-window .sidebar .view:backdrop {
-	background-color: alpha(@theme_base_color,0.8);
+	background-color: alpha(@theme_bg_color,0.8);
 	color: alpha(@theme_unfocused_fg_color,0.5);
 }
 
@@ -5166,15 +5177,16 @@ grid.horizontal > stack > box.vertical > box.horizontal > paned.vertical > box.h
 .nemo-inactive-pane .view,
 .nemo-inactive-pane scrolledwindow,
 .nemo-inactive-pane scrolledwindow treeview {
-	background-color: #6d6d6f;
+	background-color: shade(@theme_base_color,0.92);
 	background-image: none;
+	color: alpha(@theme_fg_color,0.6);
 }
 
 .nemo-inactive-pane .view:selected,
 .nemo-inactive-pane scrolledwindow:selected,
 .nemo-inactive-pane scrolledwindow treeview:selected {
     background-color: alpha(@theme_selected_bg_color, 0.6);
-    color: alpha(@theme_selected_fg_color,0.8);
+    color: alpha(@theme_selected_fg_color,0.6);
 }
 
 /* small buttons on the nemo status bar */
@@ -5249,6 +5261,16 @@ grid.horizontal > stack > box.vertical > box.horizontal > paned.vertical > box.h
 }
 
 /* Nautilus */
+
+.nautilus-window notebook {
+   background-image: none;
+   background-color: @theme_base_color;  }
+   
+.nautilus-window notebook:backdrop {
+   background-image: none;
+   background-color: alpha(@theme_base_color,0.85);  }
+
+   /***/
 
 .nautilus-window .sidebar-button.image-button:hover {
   border: 1px solid #4d4d4d;
