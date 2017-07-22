@@ -132,6 +132,9 @@ alias pacimpl="sudo /usr/bin/pacman -D --asdep"	# 'mark as [impl]icit'	- mark on
 alias pacro="/usr/bin/pacman -Qtdq > /dev/null && sudo /usr/bin/pacman -Rns \$(/usr/bin/pacman -Qtdq | sed -e ':a;N;$!ba;s/\n/ /g')"
 
 #Placeholder for custom alias
+alias sync="repo sync"		# default action	- Sync repo
+alias envsetup=". build/envsetup.sh"		# default action	- Start build environmrent
+alias log="adb logcat"		# default action	- Logcat
 
 # Android
 export LANG=C

@@ -8,7 +8,7 @@ strings:
     shortVersion:        1.7
     versionedName:       GZLx
     shortVersionedName:  GZLx
-    bootloaderEntryName: GZLx
+    bootloaderEntryName: gzlx
 
 images:
     productLogo:         "squid.png"
