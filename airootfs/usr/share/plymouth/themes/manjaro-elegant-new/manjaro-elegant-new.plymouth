@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=Manjaro Elegant New
+Description=A theme that features a blank background with a logo.
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/manjaro-elegant-new
+ScriptFile=/usr/share/plymouth/themes/manjaro-elegant-new/manjaro-elegant-new.script

@@ -73,6 +73,7 @@ networkmanager-dispatcher-ntpd
 wireless_tools
 wpa_actiond
 wpa_supplicant
+qt5-styleplugins
 
 ##system
 base
@@ -210,6 +211,7 @@ libreoffice-fresh
 scrot
 
 #utilities
+plymouth
 neofetch
 w3m
 tmux
@@ -226,15 +228,14 @@ polkit-gnome
 python2-dbus
 python2-xdg
 qt5ct
-qt5-styleplugins
 qt5-tools
 qt5-webkit
 webkitgtk
 webkit2gtk
 
 ##vbox
-virtualbox-guest-modules-arch
-virtualbox-guest-utils
+#virtualbox-guest-modules-arch
+#virtualbox-guest-utils
 
 ##packages for installer
 unzip
@@ -256,6 +257,10 @@ gutenprint
 libcups 
 hplip
 system-config-printer
+
+##NVidia
+testing/linux
+testing/nvidia
 
 #######################
 ##   General Pkgs    ##

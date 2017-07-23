@@ -2,9 +2,9 @@
 
 set -e -u
 
-iso_name=gzlx
-iso_label="GZLx-v1.7-$(date +%Y%m)-x86_64"
-iso_version="v1.7-$(date +%Y.%m.%d)"
+iso_name=GZLx
+iso_label="GZLx-v1.8-$(date +%Y%m)-x86_64"
+iso_version="v1.8-$(date +%Y.%m.%d)"
 install_dir=arch
 work_dir=work
 out_dir=out

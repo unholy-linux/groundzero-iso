@@ -1,10 +1,12 @@
 GRUB_DEFAULT=0
 GRUB_TIMEOUT=5
-GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
+GRUB_CMDLINE_LINUX_DEFAULT="quiet resume=UUID=be97c9b4-f1fe-41bb-9d68-9d685e8013af"
 GRUB_CMDLINE_LINUX=""
 
 # Preload both GPT and MBR modules so that they are not missed
 GRUB_PRELOAD_MODULES="part_gpt part_msdos"
+
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
 
 # Uncomment to enable Hidden Menu, and optionally hide the timeout count
 #GRUB_HIDDEN_TIMEOUT=5
@@ -43,5 +45,5 @@ GRUB_DISABLE_RECOVERY=true
 #GRUB_INIT_TUNE="480 440 1"
 
 #GRUB_SAVEDEFAULT="true"
-GRUB_DISTRIBUTOR='GZLx'
+GRUB_DISTRIBUTOR='gzlx'
 GRUB_BACKGROUND="/usr/share/backgrounds/gz/GzLx.png"

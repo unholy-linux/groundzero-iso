@@ -11,5 +11,8 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
   unset f
 fi
 
+set-wallpaper --copy-root-window
+set-wallpaper --image path-to-image --fade-secs 2
+
 exec startxfce4
 
