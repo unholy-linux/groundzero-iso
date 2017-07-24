@@ -22,11 +22,11 @@ useradd -m -p "" -g users -G "adm,audio,floppy,log,network,rfkill,scanner,storag
 #chmod 700 /root
 chown -R liveuser:users /home/liveuser
 
-systemctl enable lightdm-plymouth.service
 systemctl enable pacman-init.service choose-mirror.service NetworkManager.service bluetooth.service
 systemctl enable org.cups.cupsd.service
 systemctl enable ntpd.service acpid.service
 systemctl enable sshd
+systemctl enable lightdm-plymouth.service
 
 export _EDITOR=nano
 echo "EDITOR=${_EDITOR}" >> /etc/environment

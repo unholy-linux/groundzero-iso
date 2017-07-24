@@ -40,7 +40,6 @@ def run():
     target_env_call(["/usr/bin/cleanup.sh"])
     target_env_call(["sed -i 's/base udev/base udev plymouth/g' /etc/mkinitcpio.conf"])
     target_env_call(["plymouth-set-default-theme -R arch-logo"])
-    target_env_call(["rm -f /usr/share/applications/rif.desktop"])
     run_mkinitcpio()
 
     return None
