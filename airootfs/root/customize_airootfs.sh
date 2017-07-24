@@ -38,5 +38,5 @@ gpg --receive-keys C1A60EACE707FDA5
 
 #Enable Plymouth Theme
 sed -i 's/base udev/base udev plymouth/g' /etc/mkinitcpio.conf
-plymouth-set-default-theme -R arch-logo
+plymouth-set-default-theme -R  dark-arch
 mkinitcpio -p linux

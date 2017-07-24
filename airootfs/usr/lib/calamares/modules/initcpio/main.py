@@ -39,7 +39,7 @@ def run():
     subprocess.check_call(["cp", "/run/archiso/bootmnt/arch/boot/x86_64/vmlinuz", root_mount_point + "/boot/vmlinuz-linux"])
     target_env_call(["/usr/bin/cleanup.sh"])
     target_env_call(["sed -i 's/base udev/base udev plymouth/g' /etc/mkinitcpio.conf"])
-    target_env_call(["plymouth-set-default-theme -R arch-logo"])
+    target_env_call(["plymouth-set-default-theme -R dark-arch"])
     run_mkinitcpio()
 
     return None
