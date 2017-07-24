@@ -44,7 +44,7 @@ Presentation
             anchors.top: background1.bottom
             text: "Welcome to Ground Zero Linux <br/>"+
                   "GZLx is based on Arch Linux with an easy installation.<br/>"+
-                  "GZLx was designed by android devs for the ease of android compilation."
+                  "GZLx was designed by android devs for the ease of android compilation. All tools are included."
             wrapMode: Text.WordWrap
             width: 600
             horizontalAlignment: Text.Center
@@ -63,7 +63,7 @@ Presentation
         Text {
             anchors.horizontalCenter: background2.horizontalCenter
             anchors.top: background2.bottom
-            text: "GZLx features the xfce desktop,<br/>"+
+            text: "GZLx features the xfce desktop including compton<br/>"+
                   "customized to provide amazing speed, smoothness and functionality."
             wrapMode: Text.WordWrap
             width: 600

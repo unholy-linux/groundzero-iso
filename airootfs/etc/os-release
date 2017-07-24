@@ -1,7 +1,7 @@
 NAME="GZLx"
 ID=gzlx
 ID_LIKE="arch"
-VERSION_ID=v1.8.1
-PRETTY_NAME="Phobos"
+VERSION_ID=v2.0
+PRETTY_NAME="Kharon"
 ANSI_COLOR="0;36"
 HOME_URL="https://github.com/GroundZeroLinux"

@@ -4,10 +4,10 @@ componentName:  gzlx
 strings:
     productName:         GZLx
     shortProductName:    GZLx
-    version:             1.8.1 Phobos
+    version:             2.0 Kharon
     shortVersion:        Deimos
-    versionedName:       GZLx 1.8 "Phobos"
-    shortVersionedName:  GZLx Phobos
+    versionedName:       GZLx 2.0 "Kharon"
+    shortVersionedName:  GZLx Kharon
     bootloaderEntryName: GZLx
 
 images:
