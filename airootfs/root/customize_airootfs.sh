@@ -35,3 +35,8 @@ echo "EDITOR=${_EDITOR}" >> /etc/profile
 
 pacman -Syy
 gpg --receive-keys C1A60EACE707FDA5
+
+#Enable Plymouth Theme
+sed -i 's/base udev/base udev plymouth/g' /etc/mkinitcpio.conf
+plymouth-set-default-theme -R arch-logo
+mkinitcpio -p linux

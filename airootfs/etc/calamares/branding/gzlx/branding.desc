@@ -4,9 +4,9 @@ componentName:  gzlx
 strings:
     productName:         GZLx
     shortProductName:    GZLx
-    version:             1.8 Phobos
+    version:             1.8.1 Phobos
     shortVersion:        Deimos
-    versionedName:       GZLx 1.8 "Phobos" 7.2016
+    versionedName:       GZLx 1.8 "Phobos"
     shortVersionedName:  GZLx Phobos
     bootloaderEntryName: GZLx
 

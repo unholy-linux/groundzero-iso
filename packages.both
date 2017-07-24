@@ -184,6 +184,7 @@ file-roller
 acpid 
 conky
 conky-manager
+plymouth
 clipit-gtk3
 filezilla
 gparted
@@ -211,7 +212,6 @@ libreoffice-fresh
 scrot
 
 #utilities
-plymouth
 neofetch
 w3m
 tmux
