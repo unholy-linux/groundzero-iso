@@ -1,0 +1,8 @@
+[ExtractDialog]
+DirHistory[$e]=$HOME/MR_files/,$HOME/
+Height 768=512
+Width 1366=910
+
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME
+Recent URLs[$e]=file:$HOME/Downloads/,file:$HOME/MR_files/

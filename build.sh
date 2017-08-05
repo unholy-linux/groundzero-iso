@@ -2,8 +2,8 @@
 
 set -e -u
 
-iso_name=GZLx
-iso_label="GZLx-v2.0-$(date +%Y%m)-x86_64"
+iso_name=GZKDE
+iso_label="GZKDE-v2.0-$(date +%Y%m)-x86_64"
 iso_version="v2.0-$(date +%Y.%m.%d)"
 install_dir=arch
 work_dir=work

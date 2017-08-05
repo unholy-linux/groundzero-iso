@@ -1,0 +1,38 @@
+[Devices][/org/freedesktop/UDisks2/block_devices/loop0]
+EverMounted=true
+Icon=drive-harddisk
+LastNameSeen=Loop Device
+LastSeenMounted=true
+
+[Devices][/org/freedesktop/UDisks2/block_devices/sda1]
+EverMounted=true
+Icon=drive-harddisk
+LastNameSeen=232.9 GiB Hard Drive
+LastSeenMounted=false
+
+[Devices][/org/freedesktop/UDisks2/block_devices/sda2]
+EverMounted=true
+Icon=drive-harddisk
+LastNameSeen=232.9 GiB Hard Drive
+LastSeenMounted=false
+
+[Devices][/org/freedesktop/UDisks2/block_devices/sda4]
+Icon=drive-harddisk
+LastNameSeen=97.8 GiB Hard Drive
+LastSeenMounted=false
+
+[Devices][/org/freedesktop/UDisks2/block_devices/sdb]
+Icon=drive-harddisk
+LastNameSeen=OBREVENGE_201704
+LastSeenMounted=false
+
+[Devices][/org/freedesktop/UDisks2/block_devices/sdb1]
+EverMounted=true
+Icon=drive-removable-media-usb-pendrive
+LastNameSeen=ARCH_201705
+LastSeenMounted=true
+
+[Devices][/org/freedesktop/UDisks2/block_devices/sdb2]
+Icon=drive-removable-media-usb-pendrive
+LastNameSeen=ARCHISO_EFI
+LastSeenMounted=false

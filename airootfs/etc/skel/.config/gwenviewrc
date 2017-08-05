@@ -1,0 +1,24 @@
+[MainWindow]
+Height 768=617
+State=AAAA/wAAAAD9AAAAAAAABCgAAAIlAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Width 1366=1064
+
+[Recent Files]
+File1[$e]=$HOME/MR_files/Mate_Revenge-hollow.png
+File2[$e]=$HOME/MR_files/MRevenge_banner-v3.png
+File3[$e]=/usr/share/sddm/themes/elarun/elarun.jpg
+File4[$e]=/usr/share/sddm/themes/breeze/preview.png
+File5[$e]=/usr/share/sddm/themes/maldives/maldives.jpg
+File6[$e]=$HOME/Pictures/Screenshot_20170505_165531.png
+File7[$e]=$HOME/slide5.png
+Name1[$e]=Mate_Revenge-hollow.png
+Name2[$e]=MRevenge_banner-v3.png
+Name3[$e]=elarun.jpg
+Name4[$e]=preview.png
+Name5[$e]=maldives.jpg
+Name6[$e]=Screenshot_20170505_165531.png
+Name7[$e]=slide5.png
+
+[SideBar-ViewMode]
+IsVisible=true

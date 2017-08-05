@@ -1,0 +1,28 @@
+[ConfigDialog]
+Height 768=252
+Width 1366=385
+
+[DownloadDialog Settings]
+Height 768=512
+Width 1366=700
+
+[HTML Settings]
+AutomaticDetectionLanguage=1
+
+[KFileDialog Settings]
+Recent Files[$e]=01407_harboursunset_1280x720.jpg,file:$HOME/Pictures/Wallpapers/01407_harboursunset_1280x720.jpg
+Recent URLs[$e]=file:$HOME/Pictures/Wallpapers/
+
+[MainWindow]
+Height 768=697
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAABKEAAAKTAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Width 1366=1185
+
+[PlasmaRunnerManager]
+LaunchCounts=
+
+[classic_mode]
+autoExpandOneLevel=false
+viewLayout=266,531

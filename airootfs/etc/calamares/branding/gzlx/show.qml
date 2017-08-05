@@ -63,7 +63,7 @@ Presentation
         Text {
             anchors.horizontalCenter: background2.horizontalCenter
             anchors.top: background2.bottom
-            text: "GZLx features the xfce desktop including compton<br/>"+
+            text: "GZLx features the KDE desktop<br/>"+
                   "customized to provide amazing speed, smoothness and functionality."
             wrapMode: Text.WordWrap
             width: 600

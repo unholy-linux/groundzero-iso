@@ -1,0 +1,20 @@
+[General]
+copySaveLocation=false
+default-save-image-format=png
+default-save-location[$e]=$HOME/Pictures
+last-saved-to[$e]=$HOME/Pictures
+lastSaveAsLocation=file:///home/ajjames31/Pictures/
+save-filename-format=Screenshot_%Y%M%D_%H%m%S
+
+[GuiConfig]
+dynamicSaveButton=false
+includeDecorations=true
+includePointer=true
+lastUsedSaveMode=2
+rememberLastRectangularRegion=false
+useLightMaskColour=false
+window-position=50,50
+
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME/Pictures/Screenshot_20170426_180822.png,file:$HOME/Pictures/krevenge-kinfo-screenshot.png,file:$HOME/Pictures/krevenge-tools-screenshot.png,file:$HOME/Pictures/krevenge-welcome-screenshot.png
+Recent URLs[$e]=file:$HOME/Pictures/

@@ -102,7 +102,7 @@ gnome-keyring
 ##theme resources
 gtk-update-icon-cache
 gnome-icon-theme
-breeze-icons
+#breeze-icons
 adwaita-icon-theme
 arc-icon-theme
 deepin-icon-theme
@@ -113,6 +113,9 @@ sardi-icons
 surfn-icons-git
 vivacious-colors-icon-theme
 vivacious-colors-folder-addon
+breeze-gtk
+breeze-kde4
+breeze
 
 ##fonts
 font-manager-git
@@ -152,22 +155,29 @@ yaourt
 gedit2
 
 ## GUI configuration
-compton
-xfce4
-xfce4-session
-xfce4-appfinder
-xfce4-clipman-plugin
-xfce4-goodies
-xfce4-notifyd
-xfce4-power-manager
-xfce4-terminal
-xfce4-screenshooter
-xfce4-whiskermenu-plugin
-xfce4-dockbarx-plugin-git
-xfce4-settings
-xfce-slimlock
-xfce4-taskmanager
-xscreensaver
+plasma
+cmatrix
+dolphin
+dolphin-plugins
+gwenview
+kate
+konsole
+kdenlive
+kdeconnect
+ark
+spectacle
+kdf
+kdialog
+kcalc
+kaccounts-integration
+kaccounts-providers
+kde-servicemenus-rootactions
+terminus-font
+cmatrix
+mkinitcpio-openswap
+zenity
+sl
+lynx
 
 ##File Management
 gnome-disk-utility
@@ -181,21 +191,20 @@ tumbler
 file-roller
 
 ##applications
+os-prober
 acpid 
 conky
 conky-manager
 plymouth
-clipit-gtk3
+#clipit-gtk3
 filezilla
 gparted
 leafpad
 ristretto
 youtube-dl
 p7zip
-parcellite
 mate-system-monitor
 tracker
-dosfstools
 ntfs-3g
 telegram-desktop-bin
 transmission-gtk
@@ -219,7 +228,7 @@ mousepad
 screenfetch
 calamares
 cower
-gksu
+kdesu
 mintstick-git
 pamac-aur
 playerctl

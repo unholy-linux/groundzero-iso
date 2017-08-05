@@ -1,0 +1,15 @@
+[KFileDialog Settings]
+Recent Files[$e]=
+
+[PlasmaRunnerManager]
+LaunchCounts=1 services_konqbrowser.desktop,18 services_org.kde.konsole.desktop,17 services_about-distro.desktop,2 services_kr-tools.desktop,11 services_htop.desktop,2 services_obsoftware.desktop,2 services_kcm_printer_manager.desktop,9 services_org.kde.kinfocenter.desktop,14 services_isotool.desktop,13 services_org.kde.dolphin.desktop,11 services_chromium.desktop,1 services_kodi.desktop,1 services_kcm_desktoptheme.desktop,4 services_mtrwelcome.desktop,6 services_mtr-tools.desktop,1 services_latte-dock.desktop,1 services_kcmsmserver.desktop,2 services_krwelcome.desktop
+pluginWhiteList=services,bookmarks,baloosearch
+
+[PlasmaViews][Panel 1][Horizontal1366]
+thickness=22
+
+[ScreenConnectors]
+0=LVDS
+
+[Updates]
+performed=/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/obsolete_kickoffrc.js

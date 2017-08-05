@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Service
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+MimeType=inode/directory;
+Actions=openRootDolphinHere;
+X-KDE-AuthorizeAction=shell_access
+
+[Desktop Action openRootDolphinHere]
+Name=Open Root Dolphin Here
+TryExec=kdesu
+Exec=kdesu dolphin %U
+Icon=folder-red
